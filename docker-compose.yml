@@ -18,7 +18,7 @@ services:
 
 # --- KAFKA MANAGER ---
   zookeeper:
-    image: confluentinc/cp_zookeeper:latest
+    image: confluentinc/cp-zookeeper:7.6.1
     container_name: com-zookeeper
     environment:
       ZOOKEEPER_CLIENT_PORT: 2181
@@ -28,7 +28,7 @@ services:
 
 # --- MESSAGE SYSTEM ---
   kafka:
-    image: confluentinc/cp-kafka:latest
+    image: confluentinc/cp-kafka:7.6.1
     container_name: com-kafka
     depends_on:
       - zookeeper
@@ -36,7 +36,7 @@ services:
       - "9092:9092"
     environment:
       KAFKA_BROKER_ID: 1
-      KAFKA_ZOOKEEPER_CONNECT: zookeeper:2181
+      KAFKA_ZOOKEEPER_CONNECT: com-zookeeper:2181
       KAFKA_ADVERTISED_LISTENERS: PLAINTEXT://localhost:9092,PLAINTEXT_INTERNAL://kafka:29092
       KAFKA_LISTENER_SECURITY_PROTOCOL_MAP: PLAINTEXT:PLAINTEXT,PLAINTEXT_INTERNAL:PLAINTEXT
       KAFKA_INTER_BROKER_LISTENER_NAME: PLAINTEXT_INTERNAL
