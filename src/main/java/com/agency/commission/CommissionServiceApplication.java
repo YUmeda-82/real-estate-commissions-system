@@ -1,13 +1,13 @@
-package com.imobiliaria.comissao;
+package com.agency.commission;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class ComissaoServiceApplication {
+public class CommissionServiceApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(ComissaoServiceApplication.class, args);
+		SpringApplication.run(CommissionServiceApplication.class, args);
 	}
 
 }
