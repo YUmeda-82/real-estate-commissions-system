@@ -9,9 +9,9 @@
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>com.agency</groupId>
-	<artifactId>commsions-system</artifactId>
+	<artifactId>commissions-system</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
-	<name>comissions-system</name>
+	<name>commissions-system</name>
 	<description>Demo project for Spring Boot</description>
 	<url/>
 	<licenses>
