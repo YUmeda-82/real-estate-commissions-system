@@ -13,6 +13,6 @@ public interface BrokerRepository extends JpaRepository<Broker, Long> {
 
     Optional<Broker> findByCpf(String cpf);
 
-    boolean existsByCpf (String cpf);
-    boolean existsByEmail (String email);
+    boolean existsByCpf(String cpf);
+    boolean existsByEmail(String email);
 }
