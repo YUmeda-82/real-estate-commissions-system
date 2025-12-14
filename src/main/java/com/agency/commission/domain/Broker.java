@@ -23,19 +23,19 @@ public class Broker {
     @Column(nullable = false, length = 100)
     private String name;
 
-    @Column (nullable = false, length = 11)
+    @Column(nullable = false, length = 11)
     private String cpf;
 
-    @Column (nullable = false, length = 100)
+    @Column(nullable = false, length = 100)
     private String email;
 
-    @Column (nullable = false)
+    @Column(nullable = false)
     private Boolean active = true;
 
-    @Column (name = "Created_at", nullable = false, updatable = false)
+    @Column(name = "Created_at", nullable = false, updatable = false)
     private LocalDateTime createdAt;
 
-    @Column (name = "Updated_at")
+    @Column(name = "Updated_at")
     private LocalDateTime updatedAt;
 
     @PrePersist
